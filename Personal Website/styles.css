@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    background-color: rgb(17, 17, 17);
+}
+
+.main{
+    height: 1000px;
+    width: auto;
+
+    color: white;
+
+    text-align: center;
+
+    font: 50px;
+
+}
+
+.mid{
+    width: 100%;
+    height: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    color: white;
+    border: none;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 3px 10px;
+
+    font-size: large;
+
+    background-color: rgb(44, 44, 44);
+}
+
+button:hover{
+    color: black;
+
+    background-color: rgb(224, 224, 224);
+
+    border-radius: 20px;
+}
+
+.projects{
+    background-color: white;
+    color: black;
+    height: 600px;
+    width: 100%;
+}
