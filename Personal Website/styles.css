@@ -1,8 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-
-    background-color: rgb(17, 17, 17);
 }
 
 .main{
@@ -14,7 +12,15 @@
     text-align: center;
 
     font: 50px;
+    background-color: rgb(17, 17, 17);
+}
 
+.main h1{
+    font-size: 50px;
+}
+
+.main h2{
+    padding-bottom: 10px;
 }
 
 .mid{
@@ -30,7 +36,6 @@
 button{
     color: white;
     border: none;
-    display: inline-block;
     border-radius: 20px;
     padding: 3px 10px;
 
@@ -47,9 +52,24 @@ button:hover{
     border-radius: 20px;
 }
 
-.projects{
+.intro{
     background-color: white;
-    color: black;
-    height: 600px;
+    color: rgb(0, 0, 0);
+    height: 300px;
     width: 100%;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.intro .content{
+    height: 80%;
+    width: 50%;
+
+    background-color: rgb(255, 255, 255);
+
+
 }
