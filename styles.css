@@ -45,6 +45,11 @@
     width: 100%;
     height: 100vh;
 
+    background: 
+    url("images/bg.jpg") center no-repeat;
+    background-size: cover;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,13 +57,13 @@
 }
 
 .mid .content h1{
-    letter-spacing: .5rem;
-    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3.5s steps(15), blink .95s ease-in-out 3.5s infinite;
-    width: 19ch;
+    width: 18ch;
     margin: auto;
     border-right: 4px solid rgba(255,255,255,1);
 }
@@ -68,7 +73,7 @@
         width: 0ch;
     }
     100%{
-        width:19ch;
+        width:18ch;
 
     }
 }
