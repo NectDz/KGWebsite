@@ -51,6 +51,37 @@
     flex-direction: column;
 }
 
+.mid .content h1{
+    letter-spacing: .5rem;
+    font-size: 3.8rem;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(15), blink .95s ease-in-out 3.5s infinite;
+    width: 19ch;
+    margin: auto;
+    border-right: 4px solid rgba(255,255,255,1);
+}
+
+@keyframes typing{
+    60%{
+        width: 0ch;
+    }
+    100%{
+        width:19ch;
+
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right: 6px solid rgba(255,255,255,0);
+    }
+    to{
+        border-right: 6px solid rgb(194,194,194);
+    }
+}
+
 button{
     color: white;
     border: none;
