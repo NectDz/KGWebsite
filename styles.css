@@ -88,20 +88,20 @@
 }
 
 button{
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 20px;
     padding: 3px 10px;
 
     font-size: large;
-
-    background-color: rgb(44, 44, 44);
+    transition: 0.3s;
+    background-color: #4b4bcf;
 }
 
 button:hover{
-    color: black;
+    color: rgb(255, 255, 255);
 
-    background-color: rgb(224, 224, 224);
+    background-color: #37378b;
 
     border-radius: 20px;
 }
