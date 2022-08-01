@@ -127,3 +127,10 @@ button:hover{
 
 
 }
+
+.projects{
+    height: 200vh;
+    width: auto;
+
+    background-color: #171717;
+}
