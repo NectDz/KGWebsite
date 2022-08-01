@@ -30,7 +30,7 @@
     text-align: center;
 
     font: 50px;
-    background-color: rgb(17, 17, 17);
+
 }
 
 .main h1{
@@ -106,6 +106,8 @@ button:hover{
     border-radius: 20px;
 }
 
+/* Introduction Section */
+
 .intro{
     background-color: white;
     color: rgb(0, 0, 0);
@@ -127,10 +129,15 @@ button:hover{
 
 
 }
+/* Project Section */
 
 .projects{
     height: 200vh;
     width: auto;
 
-    background-color: #171717;
+    background: linear-gradient(to bottom right, #171717 0%, #06062c 100%);
+}
+
+.projects h1{
+    display: block;
 }
