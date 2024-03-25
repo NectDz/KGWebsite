@@ -1,144 +1,141 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
-
 
 .main .mid {
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-  
+
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.main{
-    height: 1000px;
-    width: auto;
+.main {
+  height: 1000px;
+  width: auto;
 
-    color: white;
+  color: white;
 
-    text-align: center;
+  text-align: center;
 
-    font: 50px;
-
+  font: 50px;
 }
 
-.main h1{
-    font-size: 50px;
+.main h1 {
+  font-size: 50px;
 }
 
-.main h2{
-    padding-bottom: 10px;
+.main h2 {
+  padding-bottom: 10px;
 }
 
-.mid{
-    width: 100%;
-    height: 100vh;
+.mid {
+  width: 100%;
+  height: 100vh;
 
-    background: 
-    url("images/bg2.svg") center no-repeat;
-    background-size: cover;
+  background: url("images/bg2.svg") center no-repeat;
+  background-size: cover;
 
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.mid .content h1{
-    letter-spacing: .3rem;
-    font-size: 3.5rem;
-    font-weight: 400;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3.5s steps(15), blink .95s ease-in-out 3.5s infinite;
+.mid .content h1 {
+  letter-spacing: 0.3rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(15), blink 0.95s ease-in-out 3.5s infinite;
+  width: 18ch;
+  margin: auto;
+  border-right: 4px solid rgba(255, 255, 255, 1);
+}
+
+@keyframes typing {
+  60% {
+    width: 0ch;
+  }
+  100% {
     width: 18ch;
-    margin: auto;
-    border-right: 4px solid rgba(255,255,255,1);
+  }
 }
 
-@keyframes typing{
-    60%{
-        width: 0ch;
-    }
-    100%{
-        width:18ch;
-
-    }
+@keyframes blink {
+  from {
+    border-right: 6px solid rgba(255, 255, 255, 0);
+  }
+  to {
+    border-right: 6px solid rgb(194, 194, 194);
+  }
 }
 
-@keyframes blink{
-    from{
-        border-right: 6px solid rgba(255,255,255,0);
-    }
-    to{
-        border-right: 6px solid rgb(194,194,194);
-    }
+.buttons a {
+  text-decoration: none;
+  color: white;
 }
 
-button{
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 20px;
-    padding: 3px 10px;
+button {
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
 
-    font-size: large;
-    transition: 0.3s;
-    background-color: #4b4bcf;
+  font-size: large;
+  transition: 0.3s;
+  background-color: #4b4bcf;
 }
 
-button:hover{
-    color: rgb(255, 255, 255);
+button:hover {
+  color: rgb(255, 255, 255);
 
-    background-color: #37378b;
-    transform: scale(0.9);
-    cursor:pointer;
-    border-radius: 20px;
+  background-color: #37378b;
+  transform: scale(0.9);
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 /* Introduction Section */
 
-.intro{
-    background-color: white;
-    color: rgb(0, 0, 0);
-    height: 50vh;
-    width: 100%;
+.intro {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  height: 50vh;
+  width: 100%;
 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.intro .content{
-    height: 80%;
-    width: 50%;
+.intro .content {
+  height: 80%;
+  width: 50%;
 
-    background-color: rgb(255, 255, 255);
-
-
+  background-color: rgb(255, 255, 255);
 }
 /* Project Section */
 
-.projects{
-    height: 200vh;
-    width: auto;
+.projects {
+  height: 200vh;
+  width: auto;
 
-    background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
+  background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
 }
 
-.projects h1{
-    display: block;
+.projects h1 {
+  display: block;
 }
