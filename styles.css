@@ -73,31 +73,29 @@
     border-right: 6px solid rgb(194, 194, 194);
   }
 }
-
 .buttons a {
   text-decoration: none;
-  color: white;
+  color: white; /* Ensure this color works with your design */
 }
 
 button {
-  color: rgb(255, 255, 255);
-  border: none;
+  color: white; /* Change text color to ensure visibility against the transparent background */
+  border: 2px solid rgb(98, 35, 194); /* Purple border for the outline */
   border-radius: 20px;
   padding: 3px 10px;
 
   font-size: large;
   transition: 0.3s;
-  background-color: #4b4bcf;
+  background-color: transparent; /* Make the background transparent */
 }
 
 button:hover {
   color: rgb(255, 255, 255);
-
-  background-color: #37378b;
   transform: scale(0.9);
   cursor: pointer;
   border-radius: 20px;
 }
+
 
 /* Introduction Section */
 .intro {
@@ -150,6 +148,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .project {
