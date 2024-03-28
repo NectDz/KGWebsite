@@ -100,11 +100,9 @@ button:hover {
 }
 
 /* Introduction Section */
-
 .intro {
   color: rgb(0, 0, 0);
-  height: 50vh;
-
+  height: 60vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -112,25 +110,40 @@ button:hover {
 }
 
 .intro .content {
+  display: flex;
+  align-items: center;
   height: 80%;
-  width: 50%;
-
+  width: 60%; /* Adjusted width to accommodate profile pic */
   background-color: rgb(255, 255, 255);
 }
-/* Project Section */
 
+.intro .content .text {
+  flex: 2;
+  padding: 10px;
+}
+
+.intro .content .profile {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .content .profile img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* Project Section */
 .projects {
-  height: 100vh;
-  width: auto;
+  height: 150vh;
   background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
   padding: 20px;
 }
 
 .projects h1 {
-  display: block;
   color: white;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .project-row {
@@ -140,34 +153,32 @@ button:hover {
 }
 
 .project {
-  width: 45%; /* Adjust width as per design requirement */
-  background-color: #0e0e0e; /* Slightly lighter than the darkest background shade */
-  color: white; /* For text inside the project div */
+  display: block;
+  width: 30%;
+  background-color: #0e0e0e;
+  color: white;
   margin: 10px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); /* Adding some shadow for depth */
-  border-radius: 8px; /* Adds rounded corners to the project boxes */
-  overflow: hidden; /* Ensures the content fits within the borders */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transform: scale(1);
+}
+
+.project:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 5px 65px rgba(98, 35, 194, 0.5);
+  background-color: rgba(31, 14, 57, 0.5);
 }
 
 .project img {
   width: auto;
-  height: 150px;
-  border-top-left-radius: 8px; /* Rounded corners for the image */
+  height: 200px;
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .project p {
-  padding: 10px;
-  margin: 0;
-}
-
-.project a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #28315e; /* Microsoft blue for the button */
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  margin: 10px;
-  border-radius: 4px; /* Rounded corners for the links */
+  padding: 0 10px 10px;
 }
