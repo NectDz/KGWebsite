@@ -4,6 +4,34 @@
 
   font-family: "Roboto Slab", serif;
 }
+/* Existing CSS for navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure navbar spans full width */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
+  padding: 10px;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* CSS for when navbar gets scrolled */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-black background when scrolled */
+}
+
 
 .main .mid {
   animation: fadeInAnimation ease 2s;
@@ -46,7 +74,7 @@
 
 .mid .content h1 {
   letter-spacing: 0.3rem;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
@@ -100,24 +128,34 @@ button:hover {
 /* Introduction Section */
 .intro {
   color: rgb(0, 0, 0);
-  height: 60vh;
+  height: 70vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.intro h1 {
+  font-size: 3rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
 .intro .content {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Ensure elements inside are spaced out */
   height: 80%;
-  width: 60%; /* Adjusted width to accommodate profile pic */
+  width: 80%; /* Full width for better control of spacing */
   background-color: rgb(255, 255, 255);
 }
 
 .intro .content .text {
   flex: 2;
   padding: 10px;
+  margin-right: 10px; /* Add right margin to push away from the profile */
 }
 
 .intro .content .profile {
@@ -128,8 +166,9 @@ button:hover {
 }
 
 .intro .content .profile img {
-  max-height: 100%;
-  max-width: 100%;
+
+  max-width: 70%;
+  border-radius: 40px; /* Rounded edges */
 }
 
 /* Project Section */
@@ -154,7 +193,7 @@ button:hover {
 .project {
   display: block;
   width: 30%;
-  background-color: #0e0e0e;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   margin: 10px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);

@@ -15,6 +15,14 @@
   </head>
   <body>
 
+    <nav class="navbar">
+      <a href="#home">Kevin Granados</a>
+      <a href="#about-me">About Me</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+  </nav>
+
     <div class="main">
       <div class="mid">
         <div class="content">
@@ -22,7 +30,8 @@
           <h3>2x Microsoft SWE Intern & Computer Science Major</h2>
 
           <div class="buttons">
-            <button>Projects</button>
+            <button>
+            <a href="#about-me">Learn More</a></button>
             <button>
               <a href="https://www.linkedin.com/in/kevingranados1/">LinkedIn</a>
             </button>
@@ -32,17 +41,19 @@
         </div>
       </div>
 
-      <div class="intro">
+      <div class="intro" id="about-me">
         <div class="content">
             <div class="profile">
-                <img src="profile-pic.jpg" alt="Profile Picture">
+                <img src="image.png" alt="Profile Picture">
             </div>
             <div class="text">
                 <h1>About Me</h1>
                 <p>
                     My name is Kevin Granados. I am a 2x Microsoft SWE Intern and am majoring in Computer Science at Hunter College.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                     I am passionate about creating software that helps people and have experience in full-stack development, data science, and machine learning.
                 </p>
+                <button><a href="resume.pdf" target="_blank">Resume</a></button>
             </div>
         </div>
     </div>
@@ -57,7 +68,7 @@
             <h1>Savitr</h1>
             <p>Won 1st place in the healthcare track at Georgia Tech's Hacklytics datascience hackathon, creating Savitr a Blockchain-based platform that revolutionizes how patients compare healthcare costs while ensuring data privacy</p>
           </a>
-          <a href="http://linktoproject2.com" class="project">
+          <a href="https://github.com/NectDz/Kev-Bot" class="project">
             <img src="DiscordBot.png" alt="Project 2 Image">
             <h1>KG Bot</h1>
             <p>Discord Bot created using discord.py, Reddit API, and Giphy API used by 500+ discord users with administrator tools and commands for users to interact with one another using the bots commands</p>
@@ -79,5 +90,17 @@
     
 
     </div>
+
+    <script>
+      window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+      </script>
   </body>
 </html>
+
