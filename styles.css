@@ -200,14 +200,14 @@ button:hover {
 }
 
 .experience-item img {
-  max-width: 100px; /* Adjust based on the size you want */
+  max-width: 130px; /* Adjust based on the size you want */
   height: 90px; /* Fixed height for consistency */
   object-fit: contain; /* Keeps aspect ratio without stretching images */
   margin-bottom: 20px;
 }
 
 .experience-item h2 {
-  font-size: 1.2em; /* Increase for better readability */
+  font-size: 1.3em; /* Increase for better readability */
   color: #333;
   margin: 10px 0; /* Add some space above and below the title */
 }
