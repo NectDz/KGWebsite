@@ -29,9 +29,13 @@
 
 /* CSS for when navbar gets scrolled */
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-black background when scrolled */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-black background when scrolled */
 }
-
 
 .main .mid {
   animation: fadeInAnimation ease 2s;
@@ -124,7 +128,6 @@ button:hover {
   border-radius: 20px;
 }
 
-
 /* Introduction Section */
 .intro {
   color: rgb(0, 0, 0);
@@ -133,6 +136,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e7e7e7;
 }
 
 .intro h1 {
@@ -149,7 +153,6 @@ button:hover {
   justify-content: space-between; /* Ensure elements inside are spaced out */
   height: 80%;
   width: 80%; /* Full width for better control of spacing */
-  background-color: rgb(255, 255, 255);
 }
 
 .intro .content .text {
@@ -166,14 +169,66 @@ button:hover {
 }
 
 .intro .content .profile img {
-
   max-width: 70%;
   border-radius: 40px; /* Rounded edges */
 }
 
+/* Experience Section */
+.experience {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.experience h1 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center; /* This will space the items evenly */
+}
+
+.experience-item {
+  width: calc(33.333% - 150px); /* Subtract the gap from the total width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items vertically within themselves */
+}
+
+.experience-item img {
+  max-width: 100px; /* Adjust based on the size you want */
+  height: 90px; /* Fixed height for consistency */
+  object-fit: contain; /* Keeps aspect ratio without stretching images */
+  margin-bottom: 20px;
+}
+
+.experience-item h2 {
+  font-size: 1.2em; /* Increase for better readability */
+  color: #333;
+  margin: 10px 0; /* Add some space above and below the title */
+}
+
+.experience-item p {
+  color: #666;
+  font-size: 0.9em; /* Adjust font size for the description */
+  line-height: 1.4; /* Space out lines for readability */
+}
+
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Project Section */
 .projects {
-  height: 150vh;
+  height: 100vh;
   background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
   padding: 20px;
 }
@@ -200,7 +255,8 @@ button:hover {
   border-radius: 8px;
   overflow: hidden;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
   transform: scale(1);
 }
 
@@ -221,12 +277,36 @@ button:hover {
   padding: 0 10px 10px;
 }
 
+/* Contact Section */
+.contact {
+  background-color: white; /* Light grey background */
+  color: black;
+  padding: 20px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333; /* Dark grey for icon colors */
+}
+
+.social-icons img {
+  width: auto; /* Maintain image aspect ratio */
+  height: 20px;
+  filter: grayscale(100%); /* Make the icons black and white */
+}
+
 /* All your existing CSS stays the same, except the media queries go at the very end */
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 768px) {
   /* Styles for tablets and smaller devices */
-  
+
   .navbar a {
     margin-right: 10px; /* Reduce spacing for smaller screens */
   }
@@ -238,7 +318,8 @@ button:hover {
     width: 95%; /* Adjust width for smaller screens */
   }
 
-  .intro .content .text, .intro .content .profile {
+  .intro .content .text,
+  .intro .content .profile {
     flex: none; /* Remove flex grow ratios */
     width: 100%; /* Full width for smaller containers */
     margin-right: 0; /* Reset margin as it's no longer needed in a column layout */
@@ -260,6 +341,9 @@ button:hover {
 
   .project {
     width: 90%; /* Adjust project width for smaller screens */
+  }
 
+  .projects {
+    height: auto;
   }
 }
