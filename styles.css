@@ -4,6 +4,11 @@
 
   font-family: "Roboto Slab", serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Existing CSS for navbar */
 .navbar {
   position: fixed;
@@ -24,7 +29,7 @@
 
 .navbar a:hover {
   color: #ccc;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* CSS for when navbar gets scrolled */
@@ -247,7 +252,7 @@ button:hover {
 
 .project {
   display: block;
-  width: 30%;
+  width: 25%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   margin: 10px;
@@ -268,7 +273,7 @@ button:hover {
 
 .project img {
   width: auto;
-  height: 200px;
+  height: 180px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -279,9 +284,23 @@ button:hover {
 
 /* Contact Section */
 .contact {
-  background-color: white; /* Light grey background */
   color: black;
   padding: 20px;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.contact .content {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social-icons {
@@ -292,13 +311,13 @@ button:hover {
 .social-icons a {
   display: inline-block;
   margin: 0 10px;
-  color: #333; /* Dark grey for icon colors */
+  color: #333;
 }
 
 .social-icons img {
-  width: auto; /* Maintain image aspect ratio */
+  width: auto;
   height: 20px;
-  filter: grayscale(100%); /* Make the icons black and white */
+  filter: grayscale(100%);
 }
 
 /* All your existing CSS stays the same, except the media queries go at the very end */
