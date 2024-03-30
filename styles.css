@@ -228,7 +228,7 @@ button:hover {
 
 /* Project Section */
 .projects {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
   padding: 20px;
 }
