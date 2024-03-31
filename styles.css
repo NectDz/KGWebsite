@@ -351,6 +351,16 @@ button:hover {
     margin-bottom: 20px; /* Add space between the image and the text */
   }
 
+  .experience-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .experience-item {
+    width: 90%; /* Full width minus some margin */
+    margin: 20px 0; /* Add vertical space between items */
+  }
+
   .mid .content h1 {
     font-size: 2.5rem; /* Smaller font size for headings */
   }
@@ -365,5 +375,13 @@ button:hover {
 
   .projects {
     height: auto;
+  }
+
+  .contact .content {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .social-icons a {
+    margin: 0 5px; /* Reduce spacing around social icons */
   }
 }
