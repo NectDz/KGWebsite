@@ -318,6 +318,10 @@ Background color white
   background-color: white;
 }
 
+.contact h1 {
+  font-size: 2.5rem;
+}
+
 /* Makes the content div smaller  */
 .contact .content {
   height: 100%;
