@@ -134,7 +134,7 @@ button:hover {
 }
 
 /* Introduction Section */
-.intro {
+.about {
   color: rgb(0, 0, 0);
   height: 70vh;
   text-align: center;
@@ -144,15 +144,15 @@ button:hover {
   background-color: #e7e7e7;
 }
 
-.intro h1 {
+.about h1 {
   font-size: 3rem;
 }
 
-.intro p {
+.about p {
   font-size: 1.2rem;
 }
 
-.intro .content {
+.about .content {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Ensure elements inside are spaced out */
@@ -160,20 +160,20 @@ button:hover {
   width: 80%; /* Full width for better control of spacing */
 }
 
-.intro .content .text {
+.about .content .text {
   flex: 2;
   padding: 10px;
   margin-right: 10px; /* Add right margin to push away from the profile */
 }
 
-.intro .content .profile {
+.about .content .profile {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.intro .content .profile img {
+.about .content .profile img {
   max-width: 70%;
   border-radius: 40px; /* Rounded edges */
 }
@@ -330,22 +330,22 @@ button:hover {
     margin-right: 10px; /* Reduce spacing for smaller screens */
   }
 
-  .intro .content {
+  .about .content {
     flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     width: 95%; /* Adjust width for smaller screens */
   }
 
-  .intro .content .text,
-  .intro .content .profile {
+  .about .content .text,
+  .about .content .profile {
     flex: none; /* Remove flex grow ratios */
     width: 100%; /* Full width for smaller containers */
     margin-right: 0; /* Reset margin as it's no longer needed in a column layout */
     padding: 10px 5%; /* Adjust padding for smaller screens */
   }
 
-  .intro .content .profile img {
+  .about .content .profile img {
     max-width: 50%; /* Adjust the image size for smaller screens */
     margin-bottom: 20px; /* Add space between the image and the text */
   }
