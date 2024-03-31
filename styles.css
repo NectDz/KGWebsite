@@ -328,6 +328,7 @@ button:hover {
 
   .navbar a {
     margin-right: 10px; /* Reduce spacing for smaller screens */
+    font-size: 14px; /* Smaller font size for links */
   }
 
   .about .content {
