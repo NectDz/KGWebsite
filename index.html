@@ -6,12 +6,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+      <!-- Website logo -->
       <link rel="shortcut icon" type="image/jpg" href="favicon.ico">
-      <title>Home</title>
+      <!-- Website Name -->
+      <title>Kevin granados</title>
    </head>
    <body>
       <!-- Navbar Section -->
       <nav class="navbar">
+        <!-- Navbar Items-->
          <a href="#main">Kevin Granados</a>
          <a href="#about-me">About Me</a>
          <a href="#experience">Experience</a>
@@ -22,12 +25,14 @@
       <!-- Main Section -->
       <div class="main" id="main">
         
-
+        <!-- Header Section -->
          <div class="header">
+          <!-- Header Content -->
             <div class="content">
-               <h1>Kevin Granados</h1>
+               <h1>Kevin Granados</h1> <!-- Your Name -->
                <h3>
-               2x Microsoft SWE Intern & Computer Science Major</h2>
+               2x Microsoft SWE Intern & Computer Science Major</h2> <!-- Role -->
+               <!-- Buttons -->
                <div class="buttons">
                   <button>
                   <a href="#about-me">Learn More</a></button>
@@ -39,11 +44,16 @@
             </div>
          </div>
 
+         <!-- About Me Section -->
          <div class="about" id="about-me">
+          <!-- About me Content -->
             <div class="content">
+              <!-- Profile Image -->
                <div class="profile">
                   <img src="image.png" alt="Profile Picture">
                </div>
+
+               <!-- About me Text -->
                <div class="text">
                   <h1>About Me</h1>
                   <p>
@@ -51,27 +61,32 @@
                      <br><br>
                      I am passionate about creating software that helps people and have experience in full-stack development, data science, and machine learning.
                   </p>
+                  <!-- Button linking to resume -->
                   <button><a href="resume.pdf" target="_blank">Resume</a></button>
                </div>
             </div>
          </div>
 
+          <!-- Experience Section -->
          <div class="experience" id="experience">
             <h1>Experience</h1>
+            <!-- Experience Content -->
             <div class="experience-container">
-               <!-- Experience Item -->
+               <!-- Experience Items -->
                <div class="experience-item">
-                  <img src="./Experience/Microsoft.png" alt="Datadog Logo">
-                  <h2>Microsoft</h2>
-                  <p>2x Software Engineer Intern<br>2022 - 2023</p>
+                  <img src="./Experience/Microsoft.png" alt="Microsoft"> <!-- Experience image -->
+                  <h2>Microsoft</h2> <!-- Company -->
+                  <p>2x Software Engineer Intern<br>2022 - 2023</p> <!-- Role and date employed -->
                </div>
+
                <div class="experience-item">
-                  <img src="./Experience/TwoSigma.png" alt="Datadog Logo">
+                  <img src="./Experience/TwoSigma.png" alt="TwoSigma">
                   <h2>Two Sigma</h2>
                   <p>Mentee<br>July 2021 – August 2021</p>
                </div>
+
                <div class="experience-item">
-                  <img src="./Experience/image.png" alt="Datadog Logo">
+                  <img src="./Experience/image.png" alt="NYC DOT">
                   <h2>NYC Department Of Transportation</h2>
                   <p>Application Developer Intern<br>January 2023 – Present</p>
                </div>
@@ -79,15 +94,23 @@
             </div>
          </div>
 
+         <!--Project Section -->
          <div class="projects" id = "projects">
             <h1>Projects</h1>
+            <!-- Project Content -->
             <div class="content">
+
+                <!-- Project Row 1 -->
                <div class="project-row">
-                  <a href="https://devfolio.co/projects/savitr-d6df" class="project">
-                     <img src="./Projects/Savitr.png" alt="Project 1 Image">
-                     <h1>Savitr</h1>
+                  <a href="https://devfolio.co/projects/savitr-d6df" class="project"> <!-- Project Link -->
+                     <img src="./Projects/Savitr.png" alt="Project 1 Image"> <!-- Project Image -->
+                     <h1>Savitr</h1> <!-- Project Name -->
+                      <!-- Project Description -->
                      <p>Won 1st place in the healthcare track at Georgia Tech's Hacklytics datascience hackathon, creating Savitr a Blockchain-based platform that revolutionizes how patients compare healthcare costs while ensuring data privacy</p>
                   </a>
+
+                  <!-- Add other projects here using the same structure -->
+
                   <a href="https://github.com/NectDz/Kev-Bot" class="project">
                      <img src="./Projects/DiscordBot.png" alt="Project 2 Image">
                      <h1>KG Bot</h1>
@@ -95,12 +118,14 @@
                   </a>
                </div>
 
+                <!-- Project Row 2 -->
                <div class="project-row">
                   <a href="http://linktoproject3.com" class="project">
                      <img src="./Projects/WorkoutTracking.png" alt="Project 3 Image">
                      <h1>IronLift Workout</h1>
                      <p>IronLift is a workout tracking app with over 10+ exersies per mucle group, users can create workout and seen progress with graphs and visualiation to achieve health goals</p>
                   </a>
+
                   <a href="http://linktoproject4.com" class="project">
                      <img src="project4.jpg" alt="Project 4 Image">
                      <p>Short description of Project 4.</p>
@@ -109,10 +134,14 @@
             </div>
          </div>
 
+          <!-- Contact Section -->
          <div class="contact" id="contact">
             <div class="content">
-               <h1>Contact Me</h1>
+               <h1>Contact Me</h1> <!-- Contact Section title -->
+               <!-- Contact Section Description -->
                <p>I am open to any Software Engineering opportunities, so if you have any positions or any questions, please feel free to email me at <a href="mailto:kevingranados62@gmail.com">kevingranados62@gmail.com</a></p>
+               
+               <!-- Social Media Links -->
                <div class="social-icons">
                   <a href="https://www.linkedin.com/in/kevingranados1/" target="_blank">
                   <img src="./SocialMedia/linkedin.png" alt="LinkedIn">
@@ -121,12 +150,14 @@
                   <img src="./SocialMedia/github.png" alt="GitHub">
                   </a>
                </div>
+
             </div>
          </div>
 
       </div>
 
-      <script>
+      <!-- Javascript for Navbar Background becoming transparent after you scrol -->
+      <script> 
          window.addEventListener('scroll', function() {
              const navbar = document.querySelector('.navbar');
              if (window.scrollY > 50) {
