@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-
   font-family: "Roboto Slab", serif;
 }
 
@@ -14,11 +13,14 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Ensure navbar spans full width */
-  background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
+  width: 100%;
+  /* Ensure navbar spans full width */
+  background-color: rgba(0, 0, 0, 0);
+  /* Transparent background initially */
   padding: 10px;
   z-index: 1000;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
 }
 
 .navbar a {
@@ -34,12 +36,8 @@ html {
 
 /* CSS for when navbar gets scrolled */
 .navbar.scrolled {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Semi-black background when scrolled */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-black background when scrolled */
 }
 
 .main .mid {
@@ -60,21 +58,16 @@ html {
 .main {
   height: 1000px;
   width: auto;
-
   color: white;
-
   text-align: center;
-
   font: 50px;
 }
 
 .mid {
   width: 100%;
   height: 100vh;
-
   background: url("images/bg2.svg") center no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +94,6 @@ html {
     width: 18ch;
   }
 }
-
 @keyframes blink {
   from {
     border-right: 6px solid rgba(255, 255, 255, 0);
@@ -110,20 +102,24 @@ html {
     border-right: 6px solid rgb(194, 194, 194);
   }
 }
+
 .buttons a {
   text-decoration: none;
-  color: white; /* Ensure this color works with your design */
+  color: white;
+  /* Ensure this color works with your design */
 }
 
 button {
-  color: white; /* Change text color to ensure visibility against the transparent background */
-  border: 2px solid rgb(98, 35, 194); /* Purple border for the outline */
+  color: white;
+  /* Change text color to ensure visibility against the transparent background */
+  border: 2px solid rgb(98, 35, 194);
+  /* Purple border for the outline */
   border-radius: 20px;
   padding: 3px 10px;
-
   font-size: large;
   transition: 0.3s;
-  background-color: transparent; /* Make the background transparent */
+  background-color: transparent;
+  /* Make the background transparent */
 }
 
 button:hover {
@@ -155,15 +151,18 @@ button:hover {
 .about .content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure elements inside are spaced out */
+  justify-content: space-between;
+  /* Ensure elements inside are spaced out */
   height: 80%;
-  width: 80%; /* Full width for better control of spacing */
+  width: 80%;
+  /* Full width for better control of spacing */
 }
 
 .about .content .text {
   flex: 2;
   padding: 10px;
-  margin-right: 10px; /* Add right margin to push away from the profile */
+  margin-right: 10px;
+  /* Add right margin to push away from the profile */
 }
 
 .about .content .profile {
@@ -175,7 +174,8 @@ button:hover {
 
 .about .content .profile img {
   max-width: 70%;
-  border-radius: 40px; /* Rounded edges */
+  border-radius: 40px;
+  /* Rounded edges */
 }
 
 /* Experience Section */
@@ -193,34 +193,44 @@ button:hover {
 
 .experience-container {
   display: flex;
-  justify-content: center; /* This will space the items evenly */
+  justify-content: center;
+  /* This will space the items evenly */
 }
 
 .experience-item {
-  width: calc(33.333% - 150px); /* Subtract the gap from the total width */
+  width: calc(33.333% - 150px);
+  /* Subtract the gap from the total width */
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align items vertically within themselves */
+  align-items: center;
+  /* Center-align items vertically within themselves */
 }
 
 .experience-item img {
-  max-width: 130px; /* Adjust based on the size you want */
-  height: 90px; /* Fixed height for consistency */
-  object-fit: contain; /* Keeps aspect ratio without stretching images */
+  max-width: 130px;
+  /* Adjust based on the size you want */
+  height: 90px;
+  /* Fixed height for consistency */
+  object-fit: contain;
+  /* Keeps aspect ratio without stretching images */
   margin-bottom: 20px;
 }
 
 .experience-item h2 {
-  font-size: 1.3em; /* Increase for better readability */
+  font-size: 1.3em;
+  /* Increase for better readability */
   color: #333;
-  margin: 10px 0; /* Add some space above and below the title */
+  margin: 10px 0;
+  /* Add some space above and below the title */
 }
 
 .experience-item p {
   color: #666;
-  font-size: 0.9em; /* Adjust font size for the description */
-  line-height: 1.4; /* Space out lines for readability */
+  font-size: 0.9em;
+  /* Adjust font size for the description */
+  line-height: 1.4;
+  /* Space out lines for readability */
 }
 
 /* Responsive adjustments if necessary */
@@ -321,67 +331,73 @@ button:hover {
 }
 
 /* All your existing CSS stays the same, except the media queries go at the very end */
-
 /* Mobile Responsive Styles */
+
 @media only screen and (max-width: 768px) {
   /* Styles for tablets and smaller devices */
-
   .navbar a {
-    margin-right: 10px; /* Reduce spacing for smaller screens */
-    font-size: 14px; /* Smaller font size for links */
+    margin-right: 10px;
+    /* Reduce spacing for smaller screens */
+    font-size: 14px;
+    /* Smaller font size for links */
   }
-
   .about .content {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
+    /* Stack elements vertically */
     justify-content: center;
     align-items: center;
-    max-width: 100%; /* Adjust width for smaller screens */
+    max-width: 100%;
+    /* Adjust width for smaller screens */
   }
-
   .about .content .text,
   .about .content .profile {
-    flex: none; /* Remove flex grow ratios */
-    width: 100%; /* Full width for smaller containers */
-    margin-right: 0; /* Reset margin as it's no longer needed in a column layout */
-    padding: 10px 5%; /* Adjust padding for smaller screens */
+    flex: none;
+    /* Remove flex grow ratios */
+    width: 100%;
+    /* Full width for smaller containers */
+    margin-right: 0;
+    /* Reset margin as it's no longer needed in a column layout */
+    padding: 10px 5%;
+    /* Adjust padding for smaller screens */
   }
-
   .about .content .profile img {
-    max-width: 50%; /* Adjust the image size for smaller screens */
-    margin-bottom: 20px; /* Add space between the image and the text */
+    max-width: 50%;
+    /* Adjust the image size for smaller screens */
+    margin-bottom: 20px;
+    /* Add space between the image and the text */
   }
-
   .experience-container {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
+    /* Stack items vertically */
     align-items: center;
   }
-
   .experience-item {
-    width: 90%; /* Full width minus some margin */
-    margin: 20px 0; /* Add vertical space between items */
+    width: 90%;
+    /* Full width minus some margin */
+    margin: 20px 0;
+    /* Add vertical space between items */
   }
-
   .mid .content h1 {
-    font-size: 2.5rem; /* Smaller font size for headings */
+    font-size: 2.5rem;
+    /* Smaller font size for headings */
   }
-
   .project-row {
-    flex-direction: column; /* Stack project rows vertically */
+    flex-direction: column;
+    /* Stack project rows vertically */
   }
-
   .project {
-    width: 90%; /* Adjust project width for smaller screens */
+    width: 90%;
+    /* Adjust project width for smaller screens */
   }
-
   .projects {
     height: auto;
   }
-
   .contact .content {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 90%;
+    /* Adjust width for smaller screens */
   }
-
   .social-icons a {
-    margin: 0 5px; /* Reduce spacing around social icons */
+    margin: 0 5px;
+    /* Reduce spacing around social icons */
   }
 }
