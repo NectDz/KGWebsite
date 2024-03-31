@@ -1,45 +1,50 @@
+/* Initial CSS to remove padding and margin and to add font of your choice*/
 * {
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
 }
 
+/* When clicks on a navbar item, it smooths scrolling instead of jumping to the section*/
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Existing CSS for navbar */
+/* Makes navbar background black transparent, makes it stick to the screen when we scroll down 
+and makes it fill the whole width of the screen*/
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* Ensure navbar spans full width */
-  background-color: rgba(0, 0, 0, 0);
-  /* Transparent background initially */
   padding: 10px;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  /* Smooth transition for background color */
 }
 
+/* Makes the navbar item color white and removes the underline from the navbar items*/
 .navbar a {
   color: white;
   margin-right: 20px;
   text-decoration: none;
 }
 
+/* When hovering over the color changes to the one specified*/
 .navbar a:hover {
   color: #ccc;
   text-decoration: none;
 }
 
-/* CSS for when navbar gets scrolled */
+/* CSS for when navbar gets scrolled then a transparent black background aoppears
+This is used with the javascript in this project
+*/
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.5);
   /* Semi-black background when scrolled */
 }
 
+/* The flash animation when the site loads*/
 .main .header {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
@@ -55,14 +60,20 @@ html {
   }
 }
 
+/* Makes sites text color white unless otherwise specified 
+and aligns text center as well 
+as makes the font 50px*/
+
 .main {
-  height: 1000px;
-  width: auto;
   color: white;
   text-align: center;
   font: 50px;
 }
 
+/* Header section that makes the h1, p and buttons stack ontop of each other
+Makes the height 100% of the current device screen
+and you can change the background image here
+*/
 .header {
   width: 100%;
   height: 100vh;
@@ -74,6 +85,7 @@ html {
   flex-direction: column;
 }
 
+/* Adds the typing animation and the font size for h1 and p tags*/
 .header .content h1 {
   letter-spacing: 0.3rem;
   font-size: 3.8rem;
@@ -103,25 +115,28 @@ html {
   }
 }
 
+/* Makes the buttons link tags have no decoration and the text color white */
 .buttons a {
   text-decoration: none;
   color: white;
-  /* Ensure this color works with your design */
 }
 
+/* The button styling to have a Purple outline
+Some padding for space
+Font size of the text
+Transition delay for the hover bounce effect
+*/
 button {
-  color: white;
-  /* Change text color to ensure visibility against the transparent background */
   border: 2px solid rgb(98, 35, 194);
-  /* Purple border for the outline */
   border-radius: 20px;
   padding: 3px 10px;
   font-size: large;
   transition: 0.3s;
   background-color: transparent;
-  /* Make the background transparent */
 }
 
+/* When hovering a cursor pointer appears '
+and the button becomes a little smaller for bounce effect*/
 button:hover {
   color: rgb(255, 255, 255);
   transform: scale(0.9);
@@ -129,7 +144,13 @@ button:hover {
   border-radius: 20px;
 }
 
-/* Introduction Section */
+/* About Me Section */
+
+/* Font color changed to Black
+Stacks html items in a column and centered div
+Background color is light grey
+Height is 70% of the current device screen
+*/
 .about {
   color: rgb(0, 0, 0);
   height: 70vh;
@@ -140,6 +161,7 @@ button:hover {
   background-color: #e7e7e7;
 }
 
+/* Font size for h1 and p tags */
 .about h1 {
   font-size: 3rem;
 }
@@ -148,37 +170,27 @@ button:hover {
   font-size: 1.2rem;
 }
 
+/* Makes the text and profile image flex and aligns items in the center */
 .about .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Ensure elements inside are spaced out */
   height: 80%;
   width: 80%;
-  /* Full width for better control of spacing */
 }
 
-.about .content .text {
-  flex: 2;
-  padding: 10px;
-  margin-right: 10px;
-  /* Add right margin to push away from the profile */
-}
-
-.about .content .profile {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Size for About me image and making it round*/
 .about .content .profile img {
   max-width: 70%;
   border-radius: 40px;
-  /* Rounded edges */
 }
 
 /* Experience Section */
+
+/* Background color is white 
+Text color black
+Text is centered
+*/
 .experience {
   background-color: #fff;
   color: black;
@@ -186,73 +198,64 @@ button:hover {
   padding: 50px 0;
 }
 
+/* Font size for h1 tag and adds space below*/
 .experience h1 {
   font-size: 2em;
   margin-bottom: 50px;
 }
 
+/* Makes the experience items flex and centers them */
 .experience-container {
   display: flex;
   justify-content: center;
-  /* This will space the items evenly */
 }
 
+/* Adds even spacing and make them uniform  */
 .experience-item {
   width: calc(33.333% - 150px);
-  /* Subtract the gap from the total width */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center-align items vertically within themselves */
 }
 
+/* Image size and makes it so it doesnt go over the div size */
 .experience-item img {
   max-width: 130px;
-  /* Adjust based on the size you want */
   height: 90px;
-  /* Fixed height for consistency */
   object-fit: contain;
-  /* Keeps aspect ratio without stretching images */
   margin-bottom: 20px;
 }
 
+/* Font size for h2 and p tags */
 .experience-item h2 {
   font-size: 1.3em;
-  /* Increase for better readability */
   color: #333;
   margin: 10px 0;
-  /* Add some space above and below the title */
 }
 
 .experience-item p {
   color: #666;
   font-size: 0.9em;
-  /* Adjust font size for the description */
   line-height: 1.4;
-  /* Space out lines for readability */
-}
-
-/* Responsive adjustments if necessary */
-@media (max-width: 768px) {
-  .experience-container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* Project Section */
+
+/* Background color is a gradient from top left to bottom right */
 .projects {
-  height: auto;
+  height: auto; /* Auto for Mobile Use*/
   background: linear-gradient(to bottom right, #171717 10%, #06062c 100%);
   padding: 20px;
 }
 
+/* Font size for h1 tag and color white */
 .projects h1 {
   color: white;
   text-align: center;
 }
 
+/* Adds flex and spacing between the different projects*/
 .project-row {
   display: flex;
   justify-content: space-around;
@@ -260,6 +263,7 @@ button:hover {
   margin-top: 20px;
 }
 
+/* Project card styling and makes it in a grid like format */
 .project {
   display: block;
   width: 25%;
@@ -275,12 +279,15 @@ button:hover {
   transform: scale(1);
 }
 
+/* Hover effect for the project card 
+and makes it have a bounce effect*/
 .project:hover {
   transform: scale(0.95);
   box-shadow: 0px 5px 65px rgba(98, 35, 194, 0.5);
   background-color: rgba(31, 14, 57, 0.5);
 }
 
+/* Image size and border radius */
 .project img {
   width: auto;
   height: 180px;
@@ -288,11 +295,18 @@ button:hover {
   border-top-right-radius: 8px;
 }
 
+/* Inner padding for the project text */
 .project p {
-  padding: 0 10px 10px;
+  padding: 0 10px 20px;
 }
 
 /* Contact Section */
+
+/* Font color black
+Height taking 25% of the screen 
+display flex and centers the items 
+Background color white 
+*/
 .contact {
   color: black;
   padding: 20px;
@@ -304,6 +318,7 @@ button:hover {
   background-color: white;
 }
 
+/* Makes the content div smaller  */
 .contact .content {
   height: 100%;
   width: 40%;
@@ -312,6 +327,8 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
+
+/* Social Icons Styles*/
 
 .social-icons {
   text-align: center;
@@ -330,74 +347,65 @@ button:hover {
   filter: grayscale(100%);
 }
 
-/* All your existing CSS stays the same, except the media queries go at the very end */
 /* Mobile Responsive Styles */
 
 @media only screen and (max-width: 768px) {
-  /* Styles for tablets and smaller devices */
   .navbar a {
     margin-right: 10px;
-    /* Reduce spacing for smaller screens */
     font-size: 14px;
-    /* Smaller font size for links */
   }
+
   .about .content {
     flex-direction: column;
-    /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    /* Adjust width for smaller screens */
   }
+
   .about .content .text,
   .about .content .profile {
     flex: none;
-    /* Remove flex grow ratios */
     width: 100%;
-    /* Full width for smaller containers */
     margin-right: 0;
-    /* Reset margin as it's no longer needed in a column layout */
     padding: 10px 5%;
-    /* Adjust padding for smaller screens */
   }
+
   .about .content .profile img {
     max-width: 50%;
-    /* Adjust the image size for smaller screens */
     margin-bottom: 20px;
-    /* Add space between the image and the text */
   }
+
   .experience-container {
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
   }
+
   .experience-item {
     width: 90%;
-    /* Full width minus some margin */
     margin: 20px 0;
-    /* Add vertical space between items */
   }
+
   .header .content h1 {
     font-size: 2.5rem;
-    /* Smaller font size for headings */
   }
+
   .project-row {
     flex-direction: column;
-    /* Stack project rows vertically */
   }
+
   .project {
     width: 90%;
-    /* Adjust project width for smaller screens */
   }
+
   .projects {
     height: auto;
   }
+
   .contact .content {
     width: 90%;
-    /* Adjust width for smaller screens */
   }
+
   .social-icons a {
     margin: 0 5px;
-    /* Reduce spacing around social icons */
   }
 }
