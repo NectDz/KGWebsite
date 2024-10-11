@@ -212,6 +212,8 @@ Height is 70% of the current device screen
   align-items: center;
   justify-content: center;
   background-color: #e7e7e7;
+  padding-top: 20px; /* Add padding to the top */
+  padding-bottom: 20px; /* Add padding to the bottom */
 }
 
 /* Font size for h1 and p tags */
