@@ -97,13 +97,6 @@ This is used with the javascript in this project
   }
 }
 
-/* The flash animation when the site loads*/
-.main .header {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -143,29 +136,7 @@ and you can change the background image here
   letter-spacing: 0.3rem;
   font-size: 3.8rem;
   font-weight: 400;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3.5s steps(15), blink 0.95s ease-in-out 3.5s infinite;
   width: 18ch;
-  margin: auto;
-  border-right: 4px solid rgba(255, 255, 255, 1);
-}
-
-@keyframes typing {
-  60% {
-    width: 0ch;
-  }
-  100% {
-    width: 18ch;
-  }
-}
-@keyframes blink {
-  from {
-    border-right: 6px solid rgba(255, 255, 255, 0);
-  }
-  to {
-    border-right: 6px solid rgb(194, 194, 194);
-  }
 }
 
 /* Makes the buttons link tags have no decoration and the text color white */
