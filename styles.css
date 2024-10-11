@@ -179,10 +179,41 @@ Height is 70% of the current device screen
   width: 80%;
 }
 
-/* Size for About me image and making it round*/
+.about .content .text {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  color: black; /* Ensures the text color is black against white background */
+  width: 60%; /* Set a smaller width */
+  margin: 0 auto; /* Center the text container */
+}
+
+/* Size for About me image and making it round */
 .about .content .profile img {
-  max-width: 70%;
-  border-radius: 40px;
+  max-width: 50%;
+  width: 100%; /* Scales width to 100% of the container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 15%; /* Makes the image round */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .about .content {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .about .content .profile img {
+    width: 80%; /* Adjust image width for mobile */
+  }
+
+  .about h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+  }
+
+  .about p {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
 }
 
 /* Experience Section */
@@ -366,7 +397,10 @@ Background color white
     max-width: 100%;
   }
 
-  .about .content .text,
+  .about .content .text {
+    width: 80%; /* Adjust width for mobile */
+  }
+
   .about .content .profile {
     flex: none;
     width: 100%;
