@@ -3,12 +3,20 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
 }
 
 /* When clicks on a navbar item, it smooths scrolling instead of jumping to the section*/
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Makes navbar background black transparent, makes it stick to the screen when we scroll down 
@@ -235,7 +243,7 @@ Height is 70% of the current device screen
 
 /* Size for About me image and making it round */
 .about .content .profile img {
-  max-width: 50%;
+  max-width: 45%;
   width: 100%; /* Scales width to 100% of the container */
   height: auto; /* Maintains aspect ratio */
   border-radius: 15%; /* Makes the image round */
