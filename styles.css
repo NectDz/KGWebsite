@@ -44,6 +44,51 @@ This is used with the javascript in this project
   /* Semi-black background when scrolled */
 }
 
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .menu a {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
 /* The flash animation when the site loads*/
 .main .header {
   animation: fadeInAnimation ease 2s;
