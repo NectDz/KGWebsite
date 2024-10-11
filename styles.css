@@ -197,6 +197,10 @@ button:hover {
   border-radius: 20px;
 }
 
+button a {
+  text-decoration: none;
+}
+
 /* About Me Section */
 
 /* Font color changed to Black
